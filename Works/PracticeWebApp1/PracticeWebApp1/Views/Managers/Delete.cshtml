@@ -1,0 +1,72 @@
+﻿@model PracticeWebApp1.Models.Manager
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h2>Удаление</h2>
+
+<h3>Вы уверены, что хотите удалить это?</h3>
+<div>
+    <h4>Организаторы</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerSurname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerSurname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerOtch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerOtch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManagerType.ManagerType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManagerType.ManagerType1)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

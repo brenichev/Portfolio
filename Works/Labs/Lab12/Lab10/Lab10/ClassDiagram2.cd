@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab10.Factory">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAAQEAAAAAAAAEgAEAIAAAABAAAAAABA=</HashCode>
+      <FileName>Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab10.InsuranceCompany">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAAAgAAAAAQEAAAAAAEAEgAFAIAAAABAAAAAABA=</HashCode>
+      <FileName>InsuranceCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab10.Library">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAABAAAQEAAAAAAAAEgAEAIAAAABAAAAAABA=</HashCode>
+      <FileName>Library.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab10.Organization">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQMgAAICAQAGgAEAIAAAABAAAAAABA=</HashCode>
+      <FileName>Organization.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lab10.ShipbuildingCompany">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAGgAEAIgAAABAAAAAABA=</HashCode>
+      <FileName>ShipbuildingCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Lab10.IInterface">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Organization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9.75" />
+</ClassDiagram>

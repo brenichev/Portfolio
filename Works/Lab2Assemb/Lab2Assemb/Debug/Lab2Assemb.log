@@ -1,0 +1,5 @@
+﻿  Lab2Assemb.cpp
+C:\Users\Никита\source\repos\Lab2Assemb\Lab2Assemb\Lab2Assemb.cpp(65,9): warning C4102: firstArray: неиспользованная метка
+C:\Users\Никита\source\repos\Lab2Assemb\Lab2Assemb\Lab2Assemb.cpp(26,11): warning C4101: arr_max: неиспользованная локальная переменная
+C:\Users\Никита\source\repos\Lab2Assemb\Lab2Assemb\Lab2Assemb.cpp(188,9): warning C4101: ac: неиспользованная локальная переменная
+  Lab2Assemb.vcxproj -> C:\Users\Никита\source\repos\Lab2Assemb\Debug\Lab2Assemb.exe

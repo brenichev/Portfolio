@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d90fa0a4a79411f9ff42db4ea8e5257" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="TestModel1.Adress" Width="1.5" PointX="4.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.Age" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.EventForm" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.Event" Width="1.5" PointX="2.875" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.EventType" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.Manager" Width="1.5" PointX="7" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.ManagersList" Width="1.5" PointX="7" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.ManagerType" Width="1.5" PointX="9.125" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.Member" Width="1.5" PointX="9" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.MemberType" Width="1.5" PointX="10.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.ParticipationList" Width="1.5" PointX="7" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.Stage" Width="1.5" PointX="4.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.sysdiagram" Width="1.5" PointX="2.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel1.UsersData" Width="1.5" PointX="10.875" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="TestModel1.FK_Stages_Adresses" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_Events_Ages" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_Events_EventForms" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_Events_EventTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_Stages_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_Managers_ManagerType" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_ManagersList_Managers" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_ManagersList_Stages" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_Members_MemberTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_ParticipationList_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel1.FK_ParticipationList_Stages" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,48 @@
+﻿@model PracticeWebApp1.Models.ParticipationList
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h2>Удаление</h2>
+
+<h3>Вы уверены, что хотите удалить это?</h3>
+<div>
+    <h4>Список участников</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.MemberSurname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.MemberSurname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stage.StageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stage.StageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stage.DateStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stage.DateStart)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

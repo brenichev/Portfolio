@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EventsTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Adress">
+    <Key>
+      <PropertyRef Name="idAdress" />
+    </Key>
+    <Property Name="idAdress" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adress1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Stages" Relationship="Self.FK_Stages_Adresses" FromRole="Adresses" ToRole="Stages" />
+  </EntityType>
+  <EntityType Name="Age">
+    <Key>
+      <PropertyRef Name="idAge" />
+    </Key>
+    <Property Name="idAge" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Age1" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Events" Relationship="Self.FK_Events_Ages" FromRole="Ages" ToRole="Events" />
+  </EntityType>
+  <EntityType Name="EventForm">
+    <Key>
+      <PropertyRef Name="idForm" />
+    </Key>
+    <Property Name="idForm" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventForm1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Events" Relationship="Self.FK_Events_EventForms" FromRole="EventForms" ToRole="Events" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="idEvents" />
+    </Key>
+    <Property Name="idEvents" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Typeid" Type="Int32" Nullable="false" />
+    <Property Name="Ageid" Type="Int32" Nullable="false" />
+    <Property Name="Formid" Type="Int32" Nullable="false" />
+    <Property Name="EventLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EventDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Age" Relationship="Self.FK_Events_Ages" FromRole="Events" ToRole="Ages" />
+    <NavigationProperty Name="EventForm" Relationship="Self.FK_Events_EventForms" FromRole="Events" ToRole="EventForms" />
+    <NavigationProperty Name="EventType" Relationship="Self.FK_Events_EventTypes" FromRole="Events" ToRole="EventTypes" />
+    <NavigationProperty Name="Stages" Relationship="Self.FK_Stages_Events" FromRole="Events" ToRole="Stages" />
+  </EntityType>
+  <EntityType Name="EventType">
+    <Key>
+      <PropertyRef Name="idType" />
+    </Key>
+    <Property Name="idType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventType1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Events" Relationship="Self.FK_Events_EventTypes" FromRole="EventTypes" ToRole="Events" />
+  </EntityType>
+  <EntityType Name="Manager">
+    <Key>
+      <PropertyRef Name="idManager" />
+    </Key>
+    <Property Name="idManager" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ManagerSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ManagerName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerOtch" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerTypeid" Type="Int32" Nullable="false" />
+    <Property Name="ManagerLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ManagerType" Relationship="Self.FK_Managers_ManagerType" FromRole="Managers" ToRole="ManagerTypes" />
+    <NavigationProperty Name="ManagersLists" Relationship="Self.FK_ManagersList_Managers" FromRole="Managers" ToRole="ManagersList" />
+  </EntityType>
+  <EntityType Name="ManagersList">
+    <Key>
+      <PropertyRef Name="idForManager" />
+    </Key>
+    <Property Name="idForManager" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StageId" Type="Int32" Nullable="false" />
+    <Property Name="ManagerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Manager" Relationship="Self.FK_ManagersList_Managers" FromRole="ManagersList" ToRole="Managers" />
+    <NavigationProperty Name="Stage" Relationship="Self.FK_ManagersList_Stages" FromRole="ManagersList" ToRole="Stages" />
+  </EntityType>
+  <EntityType Name="ManagerType">
+    <Key>
+      <PropertyRef Name="idManagerType" />
+    </Key>
+    <Property Name="idManagerType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ManagerType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Managers" Relationship="Self.FK_Managers_ManagerType" FromRole="ManagerTypes" ToRole="Managers" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="idMember" />
+    </Key>
+    <Property Name="idMember" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MemberName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="MemberOtch" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="MemberTypeId" Type="Int32" Nullable="false" />
+    <Property Name="MemberDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MemberLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MemberType" Relationship="Self.FK_Members_MemberTypes" FromRole="Members" ToRole="MemberTypes" />
+    <NavigationProperty Name="ParticipationLists" Relationship="Self.FK_ParticipationList_Members" FromRole="Members" ToRole="ParticipationList" />
+  </EntityType>
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="idMemberType" />
+    </Key>
+    <Property Name="idMemberType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberType1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Members" Relationship="Self.FK_Members_MemberTypes" FromRole="MemberTypes" ToRole="Members" />
+  </EntityType>
+  <EntityType Name="ParticipationList">
+    <Key>
+      <PropertyRef Name="idPart" />
+    </Key>
+    <Property Name="idPart" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StageId" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK_ParticipationList_Members" FromRole="ParticipationList" ToRole="Members" />
+    <NavigationProperty Name="Stage" Relationship="Self.FK_ParticipationList_Stages" FromRole="ParticipationList" ToRole="Stages" />
+  </EntityType>
+  <EntityType Name="Stage">
+    <Key>
+      <PropertyRef Name="idStage" />
+    </Key>
+    <Property Name="idStage" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StageNumber" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="StageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AdressId" Type="Int32" Nullable="false" />
+    <Property Name="House" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DateStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateFinish" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StageCost" Type="Double" />
+    <Property Name="StageDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Adress" Relationship="Self.FK_Stages_Adresses" FromRole="Stages" ToRole="Adresses" />
+    <NavigationProperty Name="Event" Relationship="Self.FK_Stages_Events" FromRole="Stages" ToRole="Events" />
+    <NavigationProperty Name="ManagersLists" Relationship="Self.FK_ManagersList_Stages" FromRole="Stages" ToRole="ManagersList" />
+    <NavigationProperty Name="ParticipationLists" Relationship="Self.FK_ParticipationList_Stages" FromRole="Stages" ToRole="ParticipationList" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UsersData">
+    <Key>
+      <PropertyRef Name="idLogin" />
+      <PropertyRef Name="Login" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="idLogin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mod" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_Stages_Adresses">
+    <End Role="Adresses" Type="Self.Adress" Multiplicity="1" />
+    <End Role="Stages" Type="Self.Stage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adresses">
+        <PropertyRef Name="idAdress" />
+      </Principal>
+      <Dependent Role="Stages">
+        <PropertyRef Name="AdressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Ages">
+    <End Role="Ages" Type="Self.Age" Multiplicity="1" />
+    <End Role="Events" Type="Self.Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ages">
+        <PropertyRef Name="idAge" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="Ageid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventForms">
+    <End Role="EventForms" Type="Self.EventForm" Multiplicity="1" />
+    <End Role="Events" Type="Self.Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventForms">
+        <PropertyRef Name="idForm" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="Formid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventTypes">
+    <End Role="EventTypes" Type="Self.EventType" Multiplicity="1" />
+    <End Role="Events" Type="Self.Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="idType" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="Typeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stages_Events">
+    <End Role="Events" Type="Self.Event" Multiplicity="1" />
+    <End Role="Stages" Type="Self.Stage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="idEvents" />
+      </Principal>
+      <Dependent Role="Stages">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Managers_ManagerType">
+    <End Role="ManagerTypes" Type="Self.ManagerType" Multiplicity="1" />
+    <End Role="Managers" Type="Self.Manager" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManagerTypes">
+        <PropertyRef Name="idManagerType" />
+      </Principal>
+      <Dependent Role="Managers">
+        <PropertyRef Name="ManagerTypeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ManagersList_Managers">
+    <End Role="Managers" Type="Self.Manager" Multiplicity="1" />
+    <End Role="ManagersList" Type="Self.ManagersList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Managers">
+        <PropertyRef Name="idManager" />
+      </Principal>
+      <Dependent Role="ManagersList">
+        <PropertyRef Name="ManagerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ManagersList_Stages">
+    <End Role="Stages" Type="Self.Stage" Multiplicity="1" />
+    <End Role="ManagersList" Type="Self.ManagersList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stages">
+        <PropertyRef Name="idStage" />
+      </Principal>
+      <Dependent Role="ManagersList">
+        <PropertyRef Name="StageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Members_MemberTypes">
+    <End Role="MemberTypes" Type="Self.MemberType" Multiplicity="1" />
+    <End Role="Members" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberTypes">
+        <PropertyRef Name="idMemberType" />
+      </Principal>
+      <Dependent Role="Members">
+        <PropertyRef Name="MemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipationList_Members">
+    <End Role="Members" Type="Self.Member" Multiplicity="1" />
+    <End Role="ParticipationList" Type="Self.ParticipationList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="idMember" />
+      </Principal>
+      <Dependent Role="ParticipationList">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipationList_Stages">
+    <End Role="Stages" Type="Self.Stage" Multiplicity="1" />
+    <End Role="ParticipationList" Type="Self.ParticipationList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stages">
+        <PropertyRef Name="idStage" />
+      </Principal>
+      <Dependent Role="ParticipationList">
+        <PropertyRef Name="StageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EventsTestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Adresses" EntityType="Self.Adress" />
+    <EntitySet Name="Ages" EntityType="Self.Age" />
+    <EntitySet Name="EventForms" EntityType="Self.EventForm" />
+    <EntitySet Name="Events" EntityType="Self.Event" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventType" />
+    <EntitySet Name="Managers" EntityType="Self.Manager" />
+    <EntitySet Name="ManagersLists" EntityType="Self.ManagersList" />
+    <EntitySet Name="ManagerTypes" EntityType="Self.ManagerType" />
+    <EntitySet Name="Members" EntityType="Self.Member" />
+    <EntitySet Name="MemberTypes" EntityType="Self.MemberType" />
+    <EntitySet Name="ParticipationLists" EntityType="Self.ParticipationList" />
+    <EntitySet Name="Stages" EntityType="Self.Stage" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="UsersDatas" EntityType="Self.UsersData" />
+    <AssociationSet Name="FK_Stages_Adresses" Association="Self.FK_Stages_Adresses">
+      <End Role="Adresses" EntitySet="Adresses" />
+      <End Role="Stages" EntitySet="Stages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Ages" Association="Self.FK_Events_Ages">
+      <End Role="Ages" EntitySet="Ages" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventForms" Association="Self.FK_Events_EventForms">
+      <End Role="EventForms" EntitySet="EventForms" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventTypes" Association="Self.FK_Events_EventTypes">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stages_Events" Association="Self.FK_Stages_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Stages" EntitySet="Stages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Managers_ManagerType" Association="Self.FK_Managers_ManagerType">
+      <End Role="ManagerTypes" EntitySet="ManagerTypes" />
+      <End Role="Managers" EntitySet="Managers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ManagersList_Managers" Association="Self.FK_ManagersList_Managers">
+      <End Role="Managers" EntitySet="Managers" />
+      <End Role="ManagersList" EntitySet="ManagersLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ManagersList_Stages" Association="Self.FK_ManagersList_Stages">
+      <End Role="Stages" EntitySet="Stages" />
+      <End Role="ManagersList" EntitySet="ManagersLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Members_MemberTypes" Association="Self.FK_Members_MemberTypes">
+      <End Role="MemberTypes" EntitySet="MemberTypes" />
+      <End Role="Members" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipationList_Members" Association="Self.FK_ParticipationList_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="ParticipationList" EntitySet="ParticipationLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipationList_Stages" Association="Self.FK_ParticipationList_Stages">
+      <End Role="Stages" EntitySet="Stages" />
+      <End Role="ParticipationList" EntitySet="ParticipationLists" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

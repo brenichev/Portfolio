@@ -1,0 +1,96 @@
+﻿@model IEnumerable<PracticeWebApp1.Models.Event>
+
+@{
+    ViewBag.Title = "Мероприятия";
+}
+
+<h2>Мероприятия</h2>
+
+@if (System.Web.HttpContext.Current.Session["CurrentUser"] is PracticeWebApp1.Models.UsersData)
+{
+    if ((System.Web.HttpContext.Current.Session["CurrentUser"] as PracticeWebApp1.Models.UsersData).Mod == true)
+    {
+        <p>
+            @Html.ActionLink("Добавить новое мероприятие", "Create", null, new { @class = "btn btn-primary" })
+        </p>
+    }
+}
+
+@using (Html.BeginForm("Index", "Events", FormMethod.Get))
+{
+    <p>
+        Тип мероприятия: @Html.DropDownList("Genre", "Любое")
+        Название: @Html.TextBox("SearchString") <br />
+        Дата начала: @Html.TextBox("DateStart", null, "{0:yyyy-MM-ddTHH:mm:ss}", new
+{
+@class = "form-control",
+@type = "datetime-local"
+})
+        Дата окончания: @Html.TextBox("DateFinish", null, "{0:yyyy-MM-ddTHH:mm:ss}", new
+{
+@class = "form-control",
+@type = "datetime-local"
+})
+        <input type="submit" value="Сортировка" />
+    </p>
+}
+
+@{
+    var grid = new WebGrid(Model, ajaxUpdateContainerId: "grid");
+}
+
+<div style="font-family: Arial; padding: 20px;">
+    @if (System.Web.HttpContext.Current.Session["CurrentUser"] is PracticeWebApp1.Models.UsersData)
+    {
+        if ((System.Web.HttpContext.Current.Session["CurrentUser"] as PracticeWebApp1.Models.UsersData).Mod == true)
+        {
+            @grid.GetHtml(htmlAttributes: new { id = "grid" },
+            tableStyle: "webgrid-table",
+            headerStyle: "webgrid-header",
+            footerStyle: "webgrid-footer",
+            alternatingRowStyle: "webgrid-alternating-row",
+            selectedRowStyle: "webgrid-selected-row",
+            rowStyle: "webgrid-row-style",
+            columns: grid.Columns(grid.Column("EventName", "Название мероприятия"),
+            grid.Column("Age.idAge", "Возрастное ограничение", format: (item) => item.Age.Age1, canSort: true),
+            grid.Column("EventForm.idForm", "Форма проведения", format: (item) => item.EventForm.EventForm1),
+            grid.Column("EventType.idType", "Тип мероприятия", format: (item) => item.EventType.EventType1),
+            grid.Column("EventLink", "Ссылка на мероприятие", format: @<a href='@item.EventLink'>@item.EventLink</a>),
+            grid.Column("EventDesc", "Описание мероприятия", format: @<div class='td-max-height'>@item.EventDesc</div>),
+            grid.Column(header: "Action", format: (item) =>
+            new HtmlString(
+            Html.ActionLink("Редактировать", "Edit", new { id = item.idEvents }, new { @class = "btn btn-primary" }).ToString()
+            + " " +
+            Html.ActionLink("Удалить", "Delete", new { id = item.idEvents }, new { @class = "btn btn-danger" }).ToString()
+            )
+        )))
+        }
+        else
+        {
+            @grid.GetHtml(htmlAttributes: new { id = "grid" },
+            tableStyle: "webgrid-table",
+            headerStyle: "webgrid-header",
+            footerStyle: "webgrid-footer",
+            alternatingRowStyle: "webgrid-alternating-row",
+            selectedRowStyle: "webgrid-selected-row",
+            rowStyle: "webgrid-row-style",
+            columns: grid.Columns(grid.Column("EventName", "Название мероприятия"),
+            grid.Column("Age.idAge", "Возрастное ограничение", format: (item) => item.Age.Age1, canSort: true),
+            grid.Column("EventForm.idForm", "Форма проведения", format: (item) => item.EventForm.EventForm1),
+            grid.Column("EventType.idType", "Тип мероприятия", format: (item) => item.EventType.EventType1),
+            grid.Column("EventLink", "Ссылка на мероприятие", format: @<a href='@item.EventLink'>@item.EventLink</a>),
+            grid.Column("EventDesc", "Описание мероприятия", format: @<div class='td-max-height'>@item.EventDesc</div>),
+            grid.Column(header: "Action", format: (item) =>
+            new HtmlString(
+            Html.ActionLink("Этапы", "Stages", new { id = item.idEvents }, new { @class = "btn btn-primary" }).ToString()
+            )
+        )))
+        }
+    }
+</div>
+<div>
+    Экспорт в Excel : @Html.ActionLink("Excel", "GetExcel", "Events", new { @class = "btn btn-primary" })
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+

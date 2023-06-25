@@ -1,0 +1,20 @@
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlots.frmMain.resources
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.Properties.Resources.resources
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.csproj.GenerateResource.Cache
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\bin\Debug\MailSlotsClient.exe
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\bin\Debug\MailSlotsClient.pdb
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.exe
+c:\users\alexander\documents\visual studio 2010\Projects\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.pdb
+C:\Users\Alexander\Desktop\12345\New\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.exe
+C:\Users\Alexander\Desktop\12345\New\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.pdb
+C:\Users\Alexander\Desktop\12345\New\MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.exe
+C:\Users\Alexander\Desktop\12345\New\MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.pdb
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\bin\Debug\MailSlotsClient.exe
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\bin\Debug\MailSlotsClient.pdb
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.csproj.AssemblyReference.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlots.frmMain.resources
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.Properties.Resources.resources
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.csproj.GenerateResource.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.csproj.CoreCompileInputs.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.exe
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\2 лаб\2_MailSlots\MailSlotsClient\MailSlotsClient\obj\x86\Debug\MailSlotsClient.pdb

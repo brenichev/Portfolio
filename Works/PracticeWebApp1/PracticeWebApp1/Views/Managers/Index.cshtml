@@ -1,0 +1,39 @@
+﻿@model IEnumerable<PracticeWebApp1.Models.Manager>
+
+@{
+    ViewBag.Title = "Организаторы";
+}
+
+<h2>Организаторы</h2>
+
+<p>
+    @Html.ActionLink("Добавить новый", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+@{
+    var grid = new WebGrid(Model, ajaxUpdateContainerId: "grid");
+}
+
+<div id="grid" style="font-family: Arial; padding: 20px;">
+    @grid.GetHtml(
+    tableStyle: "webgrid-table",
+    headerStyle: "webgrid-header",
+    footerStyle: "webgrid-footer",
+    alternatingRowStyle: "webgrid-alternating-row",
+    selectedRowStyle: "webgrid-selected-row",
+    rowStyle: "webgrid-row-style",
+    columns:
+    grid.Columns(grid.Column("ManagerSurname", "Фамилия организатора"),
+    grid.Column("ManagerName", "Имя организатора"),
+    grid.Column("ManagerOtch", "Отчество организатора"),
+    grid.Column("ManagerType.ManagerType1", "Тип организатора"),
+    grid.Column("ManagerDesc", "Описание организатора"),
+    grid.Column("ManagerLink", "Ссылка"),
+    grid.Column(header: "Действия", format: (item) =>
+    new HtmlString(
+        Html.ActionLink("Редактировать", "Edit", new { id = item.idManager }, new { @class = "btn btn-primary" }).ToString()
+        + " " +
+        Html.ActionLink("Удалить", "Delete", new { id = item.idManager }, new { @class = "btn btn-danger" }).ToString()
+))))
+</div>
+

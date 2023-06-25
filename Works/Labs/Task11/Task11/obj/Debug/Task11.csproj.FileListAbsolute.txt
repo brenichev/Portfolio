@@ -1,0 +1,15 @@
+C:\Users\Никита\source\repos\Task11\Task11\bin\Debug\Task11.exe.config
+C:\Users\Никита\source\repos\Task11\Task11\bin\Debug\Task11.exe
+C:\Users\Никита\source\repos\Task11\Task11\bin\Debug\Task11.pdb
+C:\Users\Никита\source\repos\Task11\Task11\obj\Debug\Task11.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Task11\Task11\obj\Debug\Task11.exe
+C:\Users\Никита\source\repos\Task11\Task11\obj\Debug\Task11.pdb
+C:\Users\Никита\source\repos\Task11\Task11\obj\Debug\Task11.csproj.CoreCompileInputs.cache
+D:\Users\Nik\source\repos\Task11\Task11\bin\Debug\Task11.exe.config
+D:\Users\Nik\source\repos\Task11\Task11\bin\Debug\Task11.exe
+D:\Users\Nik\source\repos\Task11\Task11\bin\Debug\Task11.pdb
+D:\Users\Nik\source\repos\Task11\Task11\obj\Debug\Task11.csproj.AssemblyReference.cache
+D:\Users\Nik\source\repos\Task11\Task11\obj\Debug\Task11.csproj.SuggestedBindingRedirects.cache
+D:\Users\Nik\source\repos\Task11\Task11\obj\Debug\Task11.csproj.CoreCompileInputs.cache
+D:\Users\Nik\source\repos\Task11\Task11\obj\Debug\Task11.exe
+D:\Users\Nik\source\repos\Task11\Task11\obj\Debug\Task11.pdb

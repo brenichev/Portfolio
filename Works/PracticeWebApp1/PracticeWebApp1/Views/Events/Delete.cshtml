@@ -1,0 +1,72 @@
+﻿@model PracticeWebApp1.Models.Event
+
+@{
+    ViewBag.Title = "Удаление мероприятия";
+}
+
+<h2>Удаление мероприятия</h2>
+
+<h3>Вы уверены что хотите удалить данную запись?</h3>
+<div>
+    <h4>Мероприятия</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EventName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age.Age1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age.Age1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventForm.EventForm1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventForm.EventForm1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventType.EventType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventType.EventType1)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

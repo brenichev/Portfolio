@@ -1,0 +1,3 @@
+﻿  NumberSystem.cpp
+C:\Users\Никита\source\repos\NumberSystem\NumberSystem\NumberSystem.cpp(41,29): warning C4018: >: несоответствие типов со знаком и без знака
+  NumberSystem.vcxproj -> C:\Users\Никита\source\repos\NumberSystem\Debug\NumberSystem.exe

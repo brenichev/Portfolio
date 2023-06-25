@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PracticeWebApp1.Models.Stage>
+
+@{
+    ViewBag.Title = "Этапы";
+}
+
+<h2>Этапы</h2>
+
+<p>
+    @Html.ActionLink("Добавить новый", "Create", null, new { @class = "btn btn-primary" })
+</p>
+@{
+    var grid = new WebGrid(Model, ajaxUpdateContainerId: "grid");
+}
+
+<div style="font-family: Arial; padding: 20px;">
+    @grid.GetHtml(htmlAttributes: new { id = "grid" },
+    tableStyle: "webgrid-table",
+    headerStyle: "webgrid-header",
+    footerStyle: "webgrid-footer",
+    alternatingRowStyle: "webgrid-alternating-row",
+    selectedRowStyle: "webgrid-selected-row",
+    rowStyle: "webgrid-row-style",
+    columns:
+    grid.Columns(
+        grid.Column("StageNumber", "Номер этапа"),
+        grid.Column("StageName", "Название этапа"),
+        grid.Column("Adress.Adress1", "Улица"),
+        grid.Column("House", "Дом"),
+        grid.Column("DateStart", "Дата начала этапа"),
+        grid.Column("DateFinish", "Дата окончания этапа"),
+        grid.Column("StageCost", "Стоимость"),
+        grid.Column("StageDesc", "Описание", format: @<div class='td-max-height'>@item.StageDesc</div>),       
+        grid.Column("Event.EventName", "Название мероприятия"),
+        grid.Column(header: "Action", format: (item) =>
+            new HtmlString(
+                Html.ActionLink("Редактировать", "Edit", new { id = item.idStage }, new { @class = "btn btn-primary" }).ToString()
+                + " " +
+                Html.ActionLink("Удалить", "Delete", new { id = item.idStage }, new { @class = "btn btn-danger" }).ToString()
+    )
+)))
+</div>
+
+<div>
+    Загрузить файл : @Html.ActionLink("Загрузить файл", "GetExcel", "Events", new { @class = "btn btn-primary" })
+</div>
+

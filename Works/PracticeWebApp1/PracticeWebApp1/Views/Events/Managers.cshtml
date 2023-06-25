@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PracticeWebApp1.Models.ManagersList>
+
+@{
+    ViewBag.Title = "Список организаторов";
+}
+
+<h2>Список организаторов</h2>
+
+@{
+    var grid = new WebGrid(Model, ajaxUpdateContainerId: "grid");
+}
+
+<div id="grid" style="font-family: Arial; padding: 20px;">
+    @grid.GetHtml(
+    tableStyle: "webgrid-table",
+    headerStyle: "webgrid-header",
+    footerStyle: "webgrid-footer",
+    alternatingRowStyle: "webgrid-alternating-row",
+    selectedRowStyle: "webgrid-selected-row",
+    rowStyle: "webgrid-row-style",
+    columns:
+    grid.Columns(grid.Column("Manager.ManagerSurname", "Фамилия организатора"),
+    grid.Column("Manager.ManagerName", "Имя организатора"),
+    grid.Column("Manager.ManagerOtch", "Отчество организатора"),
+    grid.Column("Manager.ManagerType.ManagerType1", "Тип организатора"),
+    grid.Column("Manager.ManagerDesc", "Описание организатора"),
+    grid.Column("Manager.ManagerLink", "Ссылка"),
+    grid.Column("Stage.StageName", "Название этапа"),
+    grid.Column("Stage.DateStart", "Дата начала этапа")
+    )
+)
+</div>
+
+<div>
+    @Html.ActionLink("Назад", null, null, null, new { href = Request.UrlReferrer, @class = "btn btn-primary" })
+</div>
+<div></div>
+

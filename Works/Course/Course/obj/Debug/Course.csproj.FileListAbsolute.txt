@@ -1,0 +1,47 @@
+C:\Users\Никита\source\repos\Course\Course\bin\Debug\Course.exe.config
+C:\Users\Никита\source\repos\Course\Course\bin\Debug\Course.exe
+C:\Users\Никита\source\repos\Course\Course\bin\Debug\Course.pdb
+C:\Users\Никита\source\repos\Course\Course\obj\Debug\Course.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Course\Course\obj\Debug\Course.Form1.resources
+C:\Users\Никита\source\repos\Course\Course\obj\Debug\Course.Properties.Resources.resources
+C:\Users\Никита\source\repos\Course\Course\obj\Debug\Course.csproj.GenerateResource.cache
+C:\Users\Никита\source\repos\Course\Course\obj\Debug\Course.exe
+C:\Users\Никита\source\repos\Course\Course\obj\Debug\Course.pdb
+F:\Course\Course\bin\Debug\Course.exe.config
+F:\Course\Course\obj\Debug\Course.exe
+F:\Course\Course\obj\Debug\Course.pdb
+F:\Course\Course\bin\Debug\Course.exe
+F:\Course\Course\bin\Debug\Course.pdb
+F:\Course\Course\obj\Debug\Course.csprojResolveAssemblyReference.cache
+F:\Course\Course\obj\Debug\Course.Form1.resources
+F:\Course\Course\obj\Debug\Course.Properties.Resources.resources
+F:\Course\Course\obj\Debug\Course.csproj.GenerateResource.Cache
+E:\Course\Course\bin\Debug\Course.exe.config
+E:\Course\Course\obj\Debug\Course.exe
+E:\Course\Course\obj\Debug\Course.pdb
+E:\Course\Course\bin\Debug\Course.exe
+E:\Course\Course\bin\Debug\Course.pdb
+E:\Course\Course\obj\Debug\Course.Form1.resources
+E:\Course\Course\obj\Debug\Course.Properties.Resources.resources
+E:\Course\Course\obj\Debug\Course.csproj.GenerateResource.Cache
+E:\Course\Course\obj\Debug\Course.csprojAssemblyReference.cache
+E:\Курсовая без классов\Course\Course\bin\Debug\Course.exe.config
+E:\Курсовая без классов\Course\Course\bin\Debug\Course.exe
+E:\Курсовая без классов\Course\Course\bin\Debug\Course.pdb
+E:\Курсовая без классов\Course\Course\obj\Debug\Course.csprojAssemblyReference.cache
+E:\Курсовая без классов\Course\Course\obj\Debug\Course.Form1.resources
+E:\Курсовая без классов\Course\Course\obj\Debug\Course.Properties.Resources.resources
+E:\Курсовая без классов\Course\Course\obj\Debug\Course.csproj.GenerateResource.cache
+E:\Курсовая без классов\Course\Course\obj\Debug\Course.exe
+E:\Курсовая без классов\Course\Course\obj\Debug\Course.pdb
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\bin\Debug\Course.exe.config
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\bin\Debug\Course.exe
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\bin\Debug\Course.pdb
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.csproj.AssemblyReference.cache
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.csproj.SuggestedBindingRedirects.cache
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.Form1.resources
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.Properties.Resources.resources
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.csproj.GenerateResource.cache
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.csproj.CoreCompileInputs.cache
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.exe
+D:\Users\Nik\Documents\Копия курсовой\Курсовая без классов\Course\Course\obj\Debug\Course.pdb

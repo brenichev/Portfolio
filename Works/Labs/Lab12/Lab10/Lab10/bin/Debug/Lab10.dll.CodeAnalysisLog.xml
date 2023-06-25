@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\Никита\source\repos\Lab10\Lab10\bin\Debug\Lab10.dll">
+   <Modules>
+    <Module Name="lab10.dll">
+     <Namespaces>
+      <Namespace Name="Lab10">
+       <Types>
+        <Type Name="Organization" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Lab10.IInterface.City()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2020-04-24 09:35:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Никита\source\repos\Lab10\Lab10" File="Organization.cs" Line="67">Запечатайте 'Organization' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IInterface.City()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Lab10.IInterface.Employees()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2020-04-24 09:35:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Никита\source\repos\Lab10\Lab10" File="Organization.cs" Line="73">Запечатайте 'Organization' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IInterface.Employees()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Lab10.IInterface.Name()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2020-04-24 09:35:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Никита\source\repos\Lab10\Lab10" File="Organization.cs" Line="61">Запечатайте 'Organization' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IInterface.Name()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>Методы интерфейса должны быть доступны для вызова дочерним типам</Name>
+   <Description>Явные реализации методов определены с режимом доступа private. Классы, производные от классов с явной реализацией методов и выбравшие их повторное объявление на своем уровне, не смогут вызывать реализации базового класса, если базовый класс не предоставит альтернативный метод с соответствующим режимом доступа. В случае переопределения метода базового класса, который был скрыт, благодаря явной реализации интерфейса, производный класс, чтобы вызвать реализацию базового класса, должен выполнить приведение базового указателя к соответствующему интерфейсу. Однако при вызове при помощи данной ссылки фактически будет вызываться реализация производного класса, что приведет к рекурсии и, в конце концов, к переполнению стека.</Description>
+   <Resolution Name="Default">Запечатайте {0} (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность {1} и видим производным классам.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

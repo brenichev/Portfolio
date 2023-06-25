@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestModel1StoreContainer" CdmEntityContainer="EventsTestEntities1">
+    <EntitySetMapping Name="Adresses">
+      <EntityTypeMapping TypeName="TestModel1.Adress">
+        <MappingFragment StoreEntitySet="Adresses">
+          <ScalarProperty Name="idAdress" ColumnName="idAdress" />
+          <ScalarProperty Name="Adress1" ColumnName="Adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ages">
+      <EntityTypeMapping TypeName="TestModel1.Age">
+        <MappingFragment StoreEntitySet="Ages">
+          <ScalarProperty Name="idAge" ColumnName="idAge" />
+          <ScalarProperty Name="Age1" ColumnName="Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventForms">
+      <EntityTypeMapping TypeName="TestModel1.EventForm">
+        <MappingFragment StoreEntitySet="EventForms">
+          <ScalarProperty Name="idForm" ColumnName="idForm" />
+          <ScalarProperty Name="EventForm1" ColumnName="EventForm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="TestModel1.Event">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="idEvents" ColumnName="idEvents" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="Typeid" ColumnName="Typeid" />
+          <ScalarProperty Name="Ageid" ColumnName="Ageid" />
+          <ScalarProperty Name="Formid" ColumnName="Formid" />
+          <ScalarProperty Name="EventLink" ColumnName="EventLink" />
+          <ScalarProperty Name="EventDesc" ColumnName="EventDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventTypes">
+      <EntityTypeMapping TypeName="TestModel1.EventType">
+        <MappingFragment StoreEntitySet="EventTypes">
+          <ScalarProperty Name="idType" ColumnName="idType" />
+          <ScalarProperty Name="EventType1" ColumnName="EventType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Managers">
+      <EntityTypeMapping TypeName="TestModel1.Manager">
+        <MappingFragment StoreEntitySet="Managers">
+          <ScalarProperty Name="idManager" ColumnName="idManager" />
+          <ScalarProperty Name="ManagerSurname" ColumnName="ManagerSurname" />
+          <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+          <ScalarProperty Name="ManagerOtch" ColumnName="ManagerOtch" />
+          <ScalarProperty Name="ManagerTypeid" ColumnName="ManagerTypeid" />
+          <ScalarProperty Name="ManagerLink" ColumnName="ManagerLink" />
+          <ScalarProperty Name="ManagerDesc" ColumnName="ManagerDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManagersLists">
+      <EntityTypeMapping TypeName="TestModel1.ManagersList">
+        <MappingFragment StoreEntitySet="ManagersList">
+          <ScalarProperty Name="idForManager" ColumnName="idForManager" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManagerTypes">
+      <EntityTypeMapping TypeName="TestModel1.ManagerType">
+        <MappingFragment StoreEntitySet="ManagerTypes">
+          <ScalarProperty Name="idManagerType" ColumnName="idManagerType" />
+          <ScalarProperty Name="ManagerType1" ColumnName="ManagerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="TestModel1.Member">
+        <MappingFragment StoreEntitySet="Members">
+          <ScalarProperty Name="idMember" ColumnName="idMember" />
+          <ScalarProperty Name="MemberSurname" ColumnName="MemberSurname" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberOtch" ColumnName="MemberOtch" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="MemberDesc" ColumnName="MemberDesc" />
+          <ScalarProperty Name="MemberLink" ColumnName="MemberLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberTypes">
+      <EntityTypeMapping TypeName="TestModel1.MemberType">
+        <MappingFragment StoreEntitySet="MemberTypes">
+          <ScalarProperty Name="idMemberType" ColumnName="idMemberType" />
+          <ScalarProperty Name="MemberType1" ColumnName="MemberType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParticipationLists">
+      <EntityTypeMapping TypeName="TestModel1.ParticipationList">
+        <MappingFragment StoreEntitySet="ParticipationList">
+          <ScalarProperty Name="idPart" ColumnName="idPart" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stages">
+      <EntityTypeMapping TypeName="TestModel1.Stage">
+        <MappingFragment StoreEntitySet="Stages">
+          <ScalarProperty Name="idStage" ColumnName="idStage" />
+          <ScalarProperty Name="StageNumber" ColumnName="StageNumber" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="StageName" ColumnName="StageName" />
+          <ScalarProperty Name="AdressId" ColumnName="AdressId" />
+          <ScalarProperty Name="House" ColumnName="House" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateFinish" ColumnName="DateFinish" />
+          <ScalarProperty Name="StageCost" ColumnName="StageCost" />
+          <ScalarProperty Name="StageDesc" ColumnName="StageDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TestModel1.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersDatas">
+      <EntityTypeMapping TypeName="TestModel1.UsersData">
+        <MappingFragment StoreEntitySet="UsersData">
+          <ScalarProperty Name="idLogin" ColumnName="idLogin" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Mod" ColumnName="Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

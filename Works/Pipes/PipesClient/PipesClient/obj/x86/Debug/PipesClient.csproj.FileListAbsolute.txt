@@ -1,0 +1,23 @@
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\bin\Debug\PipesClient.exe
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\bin\Debug\PipesClient.pdb
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\obj\x86\Debug\PipesClient.Properties.Resources.resources
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\obj\x86\Debug\PipesClient.csproj.GenerateResource.Cache
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\obj\x86\Debug\PipesClient.exe
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\obj\x86\Debug\PipesClient.pdb
+C:\Users\Alexander\Documents\Visual Studio 2010\Projects\PipesClient\PipesClient\obj\x86\Debug\Pipes.frmMain.resources
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\obj\x86\Debug\PipesClient.exe
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\obj\x86\Debug\PipesClient.pdb
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\bin\Debug\PipesClient.exe
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\bin\Debug\PipesClient.pdb
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\obj\x86\Debug\Pipes.frmMain.resources
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\obj\x86\Debug\PipesClient.Properties.Resources.resources
+C:\Users\Alexander\Desktop\12345\New\PipesClient\PipesClient\obj\x86\Debug\PipesClient.csproj.GenerateResource.Cache
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\bin\Debug\PipesClient.exe
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\Pipes.frmMain.resources
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\PipesClient.Properties.Resources.resources
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\PipesClient.csproj.GenerateResource.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\PipesClient.csproj.CoreCompileInputs.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\PipesClient.exe
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\PipesClient.pdb
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\bin\Debug\PipesClient.pdb
+D:\Users\Nik\Documents\Учеба\4 курс\Распределенные\1_Pipes\PipesClient\PipesClient\obj\x86\Debug\PipesClient.csproj.AssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab13.exe.config
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab13.exe
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab13.pdb
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab10.dll
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab10.pdb
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab10.dll.config
+C:\Users\Никита\source\repos\Lab13\Lab13\obj\Debug\Lab13.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Lab13\Lab13\obj\Debug\Lab13.csproj.CopyComplete
+C:\Users\Никита\source\repos\Lab13\Lab13\obj\Debug\Lab13.exe
+C:\Users\Никита\source\repos\Lab13\Lab13\obj\Debug\Lab13.pdb
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab12.exe
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab12.pdb
+C:\Users\Никита\source\repos\Lab13\Lab13\bin\Debug\Lab12.exe.config

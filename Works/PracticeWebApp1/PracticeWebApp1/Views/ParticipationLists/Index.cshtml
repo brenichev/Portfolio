@@ -1,0 +1,76 @@
+﻿@model IEnumerable<PracticeWebApp1.Models.ParticipationList>
+
+@{
+    ViewBag.Title = "Список участников";
+}
+
+<h2>Список участников</h2>
+
+@{
+    var grid = new WebGrid(Model, ajaxUpdateContainerId: "grid");
+}
+<p>
+    @Html.ActionLink("Добавить новый", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<div id="grid" style="font-family: Arial; padding: 20px;">
+    @grid.GetHtml(
+    tableStyle: "webgrid-table",
+    headerStyle: "webgrid-header",
+    footerStyle: "webgrid-footer",
+    alternatingRowStyle: "webgrid-alternating-row",
+    selectedRowStyle: "webgrid-selected-row",
+    rowStyle: "webgrid-row-style",
+    columns:
+    grid.Columns(grid.Column("Member.MemberSurname", "Фамилия участника"),
+    grid.Column("Member.MemberName", "Имя участника"),
+    grid.Column("Stage.StageName", "Название этапа"),
+    grid.Column("Stage.DateStart", "Дата начала этапа"),
+    grid.Column(header: "Action", format: (item) =>
+    new HtmlString(
+        Html.ActionLink("Редактировать", "Edit", new { id = item.idPart }, new { @class = "btn btn-primary" }).ToString()
+        + " " +
+        Html.ActionLink("Удалить", "Delete", new { id = item.idPart }, new { @class = "btn btn-danger" }).ToString()
+    )
+)))
+</div>
+<div>
+    Export Data : @Html.ActionLink("Загрузить файл", "GetExcel", "Events", new { @class = "btn btn-primary" })
+</div>
+
+<!--
+    <table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Member.MemberSurname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stage.StageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stage.DateStart)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Member.MemberSurname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stage.StageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stage.DateStart)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idPart }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.idPart }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.idPart }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+-->

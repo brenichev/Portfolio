@@ -1,0 +1,59 @@
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.Properties.Resources.resources
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\obj\x86\Debug\Sockets.frmMain.resources
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.GenerateResource.Cache
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\bin\Debug\SocketsServer.pdb
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.exe
+c:\users\alexander\documents\visual studio 2010\Projects\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.pdb
+C:\Users\Alexander\Desktop\12345\New\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.exe
+C:\Users\Alexander\Desktop\12345\New\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.pdb
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\SocketsServer.pdb
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\mscorlib.dll
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\ru\mscorlib.resources.dll
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\sortkey.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\sorttbls.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\big5.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\bopomofo.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\ksc.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\prc.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\prcp.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\xjis.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\normidna.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\normnfc.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\normnfd.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\normnfkc.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\bin\Debug\normnfkd.nlp
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.AssemblyReference.cache
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.Properties.Resources.resources
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\Sockets.frmMain.resources
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.GenerateResource.cache
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.CoreCompileInputs.cache
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.CopyComplete
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.exe
+E:\HSE\РВ\Sockets\3_Sockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.pdb
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\SocketsServer.pdb
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\mscorlib.dll
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\ru\mscorlib.resources.dll
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\sortkey.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\sorttbls.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\big5.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\bopomofo.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\ksc.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\prc.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\prcp.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\xjis.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\normidna.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\normnfc.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\normnfd.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\normnfkc.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\bin\Debug\normnfkd.nlp
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.AssemblyReference.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.Properties.Resources.resources
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\Sockets.frmMain.resources
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.GenerateResource.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.CoreCompileInputs.cache
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.csproj.CopyComplete
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.exe
+D:\Users\Nik\Documents\Учеба\4 курс\Distributed\3 лаб\ino\TCPSockets\SocketsServer\SocketsServer\obj\x86\Debug\SocketsServer.pdb

@@ -1,0 +1,7 @@
+C:\Users\Никита\source\repos\Task10\Task10\bin\Debug\Task10.exe.config
+C:\Users\Никита\source\repos\Task10\Task10\bin\Debug\Task10.exe
+C:\Users\Никита\source\repos\Task10\Task10\bin\Debug\Task10.pdb
+C:\Users\Никита\source\repos\Task10\Task10\obj\Debug\Task10.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Task10\Task10\obj\Debug\Task10.exe
+C:\Users\Никита\source\repos\Task10\Task10\obj\Debug\Task10.pdb
+C:\Users\Никита\source\repos\Task10\Task10\obj\Debug\Task10.csproj.CoreCompileInputs.cache

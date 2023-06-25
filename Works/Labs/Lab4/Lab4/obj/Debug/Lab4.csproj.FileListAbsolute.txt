@@ -1,0 +1,6 @@
+C:\Users\Никита\source\repos\Lab4\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Lab4\Lab4\bin\Debug\Lab4.exe.config
+C:\Users\Никита\source\repos\Lab4\Lab4\bin\Debug\Lab4.exe
+C:\Users\Никита\source\repos\Lab4\Lab4\bin\Debug\Lab4.pdb
+C:\Users\Никита\source\repos\Lab4\Lab4\obj\Debug\Lab4.exe
+C:\Users\Никита\source\repos\Lab4\Lab4\obj\Debug\Lab4.pdb

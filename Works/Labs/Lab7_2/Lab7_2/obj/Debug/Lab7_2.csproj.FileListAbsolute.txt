@@ -1,0 +1,12 @@
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\bin\Debug\Lab7_2.exe.config
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\bin\Debug\Lab7_2.exe
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\bin\Debug\Lab7_2.pdb
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.Form1.resources
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.Form2.resources
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.Properties.Resources.resources
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.csproj.GenerateResource.cache
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.exe
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.pdb
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.Form3.resources
+C:\Users\Никита\source\repos\Lab7_2\Lab7_2\obj\Debug\Lab7_2.Form4.resources

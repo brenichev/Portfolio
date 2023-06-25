@@ -1,0 +1,209 @@
+﻿@using System.Web;
+@using System.Web.Mvc;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Информационная система для выбора досуговых мероприятий в г. Перми</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style type="text/css">
+        div {
+            font-size: 16px !important;
+        }
+        .btn-primary, .btn-default, .btn-danger {
+            font-size: 16px !important;
+        }
+        .navbar-inverse, .navbar-brand {
+            font-family: Arial,Helvetica,sans-serif !important;
+            background-color: #009900;
+            color: white !important;
+            border-color: #009900;
+        }
+
+            .navbar-inverse .navbar-nav > li > a {
+                color: white;
+            }
+
+            .navbar-inverse .navbar-nav:hover,
+            .navbar-inverse .navbar-nav:focus {
+                color: #333;
+            }
+
+            .navbar-inverse .navbar-nav > li > a:hover,
+            .navbar-inverse .navbar-nav > li > a:focus {
+                color: #333;
+            }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            /*width: 650px;*/
+            display: table;
+            border-collapse: collapse;
+            border: solid 1px #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #009900;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .td-max-height {
+            margin: 0px;
+            max-height: 150px;
+            width: 100%;
+            overflow: auto;
+        }
+
+
+        /* Style The Dropdown Button */
+        .dropbtn {
+            background-color: #009900;
+            color: white;
+            padding: 14px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {
+                    background-color: #CCCCCC
+                }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #336633;
+            /*
+                            background-color: #3e8e41;
+            */
+        }
+
+        .required label::after {
+            content: "*";
+        }
+
+        /*
+        .col1Width {
+            width: 55px;
+        }
+
+        .col2Width {
+            width: 220px;
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Главная", "Index", "Events", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+
+                @if (System.Web.HttpContext.Current.Session["CurrentUser"] is PracticeWebApp1.Models.UsersData)
+                {
+                    if ((System.Web.HttpContext.Current.Session["CurrentUser"] as PracticeWebApp1.Models.UsersData).Mod == true)
+                    {
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Таблицы</button>
+                                    <div class="dropdown-content">
+                                        @Html.ActionLink("Мероприятия", "Index", "Events")
+                                        @Html.ActionLink("Этапы", "Index", "Stages")
+                                        @Html.ActionLink("Участники", "Index", "Members")
+                                        @Html.ActionLink("Организаторы", "Index", "Managers")
+                                        @Html.ActionLink("Список участников", "Index", "ParticipationLists")
+                                        @Html.ActionLink("Список организаторов", "Index", "ManagersLists")
+                                        @Html.ActionLink("Улицы", "Index", "Adresses")
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-registration">@Html.ActionLink("Выйти из аккаунта", "Exit", "Login")</li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-registration">@Html.ActionLink("Выйти из аккаунта", "Exit", "Login")</li>
+                        </ul>
+                    }
+
+                }
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

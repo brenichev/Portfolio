@@ -1,0 +1,13 @@
+C:\Users\Никита\source\repos\Lab10\Lab10\bin\Debug\Lab10.pdb
+C:\Users\Никита\source\repos\Lab10\Lab10\obj\Debug\Lab10.pdb
+C:\Users\Никита\source\repos\Lab10\Lab10\bin\Debug\Lab10.dll.config
+C:\Users\Никита\source\repos\Lab10\Lab10\bin\Debug\Lab10.dll
+C:\Users\Никита\source\repos\Lab10\Lab10\obj\Debug\Lab10.dll
+C:\Users\Никита\source\repos\Lab10\Lab10\bin\Debug\Lab10.dll.CodeAnalysisLog.xml
+C:\Users\Никита\source\repos\Lab10\Lab10\bin\Debug\Lab10.dll.lastcodeanalysissucceeded
+C:\Users\Никита\source\repos\Lab11\Lab10\Lab10\bin\Debug\Lab10.dll.config
+C:\Users\Никита\source\repos\Lab11\Lab10\Lab10\bin\Debug\Lab10.dll
+C:\Users\Никита\source\repos\Lab11\Lab10\Lab10\bin\Debug\Lab10.pdb
+C:\Users\Никита\source\repos\Lab11\Lab10\Lab10\obj\Debug\Lab10.csprojAssemblyReference.cache
+C:\Users\Никита\source\repos\Lab11\Lab10\Lab10\obj\Debug\Lab10.dll
+C:\Users\Никита\source\repos\Lab11\Lab10\Lab10\obj\Debug\Lab10.pdb

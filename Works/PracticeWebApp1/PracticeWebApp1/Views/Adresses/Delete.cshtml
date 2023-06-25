@@ -1,0 +1,32 @@
+﻿@model PracticeWebApp1.Models.Adress
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h2>Удаление</h2>
+
+<h3>Вы уверены, что хотите удалить это?</h3>
+<div>
+    <h4>Улицы</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adress1)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Удалить" class="btn btn-default" /> |
+    @Html.ActionLink("Назад", "Index", null, new { @class = "btn btn-primary" })
+</div>
+    }
+</div>

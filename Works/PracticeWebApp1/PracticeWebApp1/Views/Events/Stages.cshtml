@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PracticeWebApp1.Models.Stage>
+
+@{
+    ViewBag.Title = "Этапы";
+}
+
+<h2>Этапы</h2>
+
+@{
+    var grid = new WebGrid(Model, ajaxUpdateContainerId: "grid");
+}
+
+<div id="grid" style="font-family: Arial; padding: 20px;">
+    @grid.GetHtml(
+    tableStyle: "webgrid-table",
+    headerStyle: "webgrid-header",
+    footerStyle: "webgrid-footer",
+    alternatingRowStyle: "webgrid-alternating-row",
+    selectedRowStyle: "webgrid-selected-row",
+    rowStyle: "webgrid-row-style",
+    columns:
+    grid.Columns(
+        grid.Column("StageNumber", "Номер этапа"),
+        grid.Column("StageName", "Название этапа"),
+        grid.Column("Adress.Adress1", "Улица"),
+        grid.Column("House", "Дом"),
+        grid.Column("DateStart", "Дата начала этапа"),
+        grid.Column("DateFinish", "Дата окончания этапа"),
+        grid.Column("StageCost", "Стоимость"),
+        grid.Column("StageDesc", "Описание"),        
+        grid.Column("Event.EventName", "Название мероприятия"),
+        grid.Column(header: "Action", format: (item) =>
+            new HtmlString(
+                Html.ActionLink("Участники", "Members", new { id = item.idStage }, new { @class = "btn btn-primary" }).ToString()
+                + " " +
+                Html.ActionLink("Организаторы", "Managers", new { id = item.idStage }, new { @class = "btn btn-primary" }).ToString()
+    )
+)))
+
+</div>
+
+<div>
+    @Html.ActionLink("Назад", null, null, null, new { href = Request.UrlReferrer, @class = "btn btn-primary" })
+</div>
+<div></div>
+
